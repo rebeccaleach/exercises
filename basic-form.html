@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Demo</title>
+
+    <style>
+	    * {
+	    	box-sizing: border-box;
+	    }
+
+	    body {
+	    	font-family: "Cochin", serif;
+	    }
+
+	    h3 {
+	    	margin: 0;
+	    }
+
+    	form {
+    		width: 60%;
+    		margin: 3em auto;
+    		padding: 2em 1em;
+    		border: 1px solid black;
+    		border-radius: 20px;
+    	}
+
+    	form div {
+    		margin-top: 1em;
+    	}
+
+    	label {
+    		margin-bottom: 0.5em;
+    		display: block;
+    	}
+
+    	.radio {
+    		display: inline;
+    		width: auto;
+    	}
+
+    	input, textarea {
+    		width: 100%;
+    		padding: 0.25em;
+    		background-color: #e9def2;
+    		border: 1px solid gray;
+    	}
+
+    	textarea {
+    		height: 100px;
+    	}
+
+    </style>
+
+  </head>
+  <body>
+  
+	  <form action="#" method="post">
+	  	  <h3>Contact Form</h3>
+		  <div>
+		  	<label for="name">Name:</label>
+		  	<input type="text" id="name" name="username" placeholder="Becs Code" required>
+		  </div>
+		  <div>
+		  	<label for="email">Email:</label>
+		  	<input type="email" id="email" name="useremail" placeholder="codebecs@gmail.com">
+		  </div>
+
+
+
+		  <!-- RADIO BUTTONS -->
+
+		  <div>
+		  	<label for="q1">What ice cream flavor do you prefer?</label>
+		  	<label class="radio">
+		  		<input class="radio" type="radio" name="q1">
+		  		Chocolate
+		  	</label>
+		  	<label class="radio">
+		  		<input class="radio" type="radio" name="q1">
+		  		Vanilla
+		  	</label>
+		  	<label class="radio">
+		  		<input class="radio" type="radio" name="q1">
+		  		Mint chocolate chip
+		  	</label>
+		  	<label class="radio">
+		  		<input class="radio" type="radio" name="q1">
+		  		Pumpkin
+		  	</label>
+		  </div>
+
+
+
+		  <div>
+		  	<label for="msg">Message:</label>
+		  	<textarea id="msg" name="usermsg" placeholder="Type your message here"></textarea>
+		  </div>
+		  <div class="button">
+		  	<button type="submit">Send your message</button>
+		  </div>
+	  </form>
+
+  </body>
+</html>
